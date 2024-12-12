@@ -13,7 +13,7 @@
     "check-lint-nt": "yarn lint-nt controllers/ libs/ middlewares/ routes/ utils/ server.js worker.js",
     "start-server": "nodemon --exec babel-node --presets @babel/preset-env ./server.js",
     "start-worker": "nodemon --exec babel-node --presets @babel/preset-env ./worker.js",
-    "dev": "nodemon --exec babel-node --presets @babel/preset-env ./server.js",
+    "dev": "nodemon --exec babel-node --presets @babel/preset-env",
     "test": "./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js",
     "test-with-coverage": "nyc --reporter=text ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js",
     "coveralls": "nyc ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js && nyc report --reporter=text-lcov | coveralls"
